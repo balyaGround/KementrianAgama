@@ -1,19 +1,164 @@
 {
-  "posts": [
+  "Status_Produk": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "No": 1,
+      "Nomor_Perkara": "123/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "194/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "16 Januari 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 2,
+      "Nomor_Perkara": "234/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "255/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "06 Februari 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 3,
+      "Nomor_Perkara": "345/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "356/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "4 Maret 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 4,
+      "Nomor_Perkara": "350/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "371/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "17 Maret 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 5,
+      "Nomor_Perkara": "355/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "380/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "25 Maret 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 6,
+      "Nomor_Perkara": "450/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "461/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "Tuesday, April 4, 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 7,
+      "Nomor_Perkara": "451/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "462/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "Wednesday, April 5, 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 8,
+      "Nomor_Perkara": "452/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "476/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "Wednesday, April 5, 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 9,
+      "Nomor_Perkara": "490/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "500/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "17 Juni 2023",
+      "Status": "Akta cerai sudah dapat diambil"
+    },
+    {
+      "No": 10,
+      "Nomor_Perkara": "500/Pdt.G/2023/PA.Mdn",
+      "Nomor_Akta_Cerai": "501/AC/2023/PA.Mdn",
+      "Tanggal_Putusan": "23 Juni 2023",
+      "Status": "Akta cerai sudah dapat diambil"
     }
   ],
-  "comments": [
+  "Status_Pengambilan": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "No": 1,
+      "Nomor_Perkara": "1/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 1",
+      "Tanggal_Ambil": "13 Februari 2023",
+      "Jam_Ambil": "10.00 - 10.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 2,
+      "Nomor_Perkara": "2/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "14 Februari 2023",
+      "Jam_Ambil": "11.00 - 11.59",
+      "Keterangan": "Melakukan penjadwalan ulang"
+    },
+    {
+      "No": 3,
+      "Nomor_Perkara": "123/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "17 Februari 2023",
+      "Jam_Ambil": "11.00 - 11.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 4,
+      "Nomor_Perkara": "534/Pdt.G/2022/PA.Mdn",
+      "Pihak": "Pihak 1",
+      "Tanggal_Ambil": "17 Februari 2023",
+      "Jam_Ambil": "11.00 - 11.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 5,
+      "Nomor_Perkara": "233/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "20 Februari 2023",
+      "Jam_Ambil": "10.00 - 10.59",
+      "Keterangan": "Melakukan penjadwalan ulang"
+    },
+    {
+      "No": 6,
+      "Nomor_Perkara": "1111/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "28 Februari 2023",
+      "Jam_Ambil": "10.00 - 10.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 7,
+      "Nomor_Perkara": "56/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 1",
+      "Tanggal_Ambil": "1 Maret 2023",
+      "Jam_Ambil": "10.00 - 10.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 8,
+      "Nomor_Perkara": "379/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 1",
+      "Tanggal_Ambil": "1 Maret 2023",
+      "Jam_Ambil": "10.00 - 10.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 9,
+      "Nomor_Perkara": "5/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "2 Maret 2023",
+      "Jam_Ambil": "11.00 -11.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 10,
+      "Nomor_Perkara": "222/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "2 Maret 2023",
+      "Jam_Ambil": "11.00 -11.59",
+      "Keterangan": "Akta cerai telah diambil"
+    },
+    {
+      "No": 11,
+      "Nomor_Perkara": "456/Pdt.G/2023/PA.Mdn",
+      "Pihak": "Pihak 2",
+      "Tanggal_Ambil": "5 Maret 2023",
+      "Jam_Ambil": "10.00 - 10.59",
+      "Keterangan": "Akta cerai telah diambil"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
