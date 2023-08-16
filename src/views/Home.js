@@ -8,6 +8,7 @@ export default function Home() {
   const [statusProdukData, setStatusProdukData] = useState([""]);
   const [statusPengambilanData, setStatusPengambilanData] = useState([""]);
   const [showStatusProduk, setShowStatusProduk] = useState(true); // Default to showing StatusProdukTable
+  const [selectedRow, setSelectedRow] = useState(null); // To store the selected row for updating
 
   const toggleTable = () => {
     setShowStatusProduk(!showStatusProduk);
@@ -30,6 +31,10 @@ export default function Home() {
     } catch (error) {
       console.error("Error fetching data:", error);
     }
+  };
+
+  const onUpdate = (row) => {
+    setSelectedRow(row);
   };
 
   return (
@@ -58,7 +63,7 @@ export default function Home() {
           <div className="col">
             <div className="card">
               <div className="card-body">
-                <div className="row ">
+                <div className="row">
                   <div className="col">
                     <div className="divbtn">
                       <button className="btn btn-success mb-2" onClick={toggleTable}>
@@ -68,14 +73,21 @@ export default function Home() {
                   </div>
                   <div className="col">
                     <div className="divbtn">
-                      <Link to="employee/create" className="btn btn-success ">
+                      <Link to={showStatusProduk ? "/add/statusProduk" : "/add/statusPengambilan"} className="btn btn-success">
                         Add New (+)
                       </Link>
                     </div>
                   </div>
                 </div>
                 <h5 className="card-title">{showStatusProduk ? "Data Status Produk" : "Data Status Pengambilan"}</h5>
-                {showStatusProduk ? <StatusProdukTable data={statusProdukData} pagination /> : <StatusPengambilanTable data={statusPengambilanData} pagination />}
+
+                {showStatusProduk ? (
+                  <StatusProdukTable data={statusProdukData} onUpdate={onUpdate} pagination />
+                ) : (
+                  <StatusPengambilanTable data={statusPengambilanData} onUpdate={onUpdate} pagination />
+                )}
+
+                {/* Render the UpdateModal component */}
               </div>
             </div>
           </div>

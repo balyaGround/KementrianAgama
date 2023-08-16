@@ -1,15 +1,11 @@
 import React from "react";
 import DataTable from "react-data-table-component";
+import UpdateModal from "./UpdateModal";
 
-const StatusProdukTable = ({ data }) => {
+const StatusProdukTable = ({ data, onUpdate }) => {
   if (!data || data.length === 0) {
     return <p>No data to display</p>;
   }
-
-  const handleUpdate = (row) => {
-    // Handle update logic here
-    console.log("Update clicked for row:", row);
-  };
 
   const handleDelete = (row) => {
     // Handle delete logic here
@@ -27,9 +23,7 @@ const StatusProdukTable = ({ data }) => {
       name: "Actions",
       cell: (row) => (
         <div className="btn-group" role="group">
-          <button className="btn btn-info btn-sm" onClick={() => handleUpdate(row)}>
-            Update
-          </button>
+          <UpdateModal row={row} tableName="Status_Produk" onUpdate={onUpdate} />
           <button className="btn btn-danger btn-sm" onClick={() => handleDelete(row)}>
             Delete
           </button>

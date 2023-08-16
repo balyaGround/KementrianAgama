@@ -1,7 +1,7 @@
 import React from "react";
 import DataTable from "react-data-table-component";
-
-const StatusPengambilanTable = ({ data }) => {
+import UpdateModal from "./UpdateModal";
+const StatusPengambilanTable = ({ data, onUpdate }) => {
   if (!data || data.length === 0) {
     return <p>No data to display</p>;
   }
@@ -28,9 +28,8 @@ const StatusPengambilanTable = ({ data }) => {
       name: "Actions",
       cell: (row) => (
         <div className="btn-group" role="group">
-          <button className="btn btn-info btn-sm" onClick={() => handleUpdate(row)}>
-            Update
-          </button>
+          <UpdateModal row={row} tableName="Status_Pengambilan" onUpdate={onUpdate} />
+
           <button className="btn btn-danger btn-sm" onClick={() => handleDelete(row)}>
             Delete
           </button>
